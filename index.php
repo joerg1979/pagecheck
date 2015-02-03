@@ -12,3 +12,20 @@
  * File: index.php
  * Job: Hompage of this miniFramework
  */
+
+# Including ConfigFile
+require_once 'common.php';
+
+#Using staticFunctions of class.HTML.php
+SYSTEM\HTML::printHead();
+SYSTEM\HTML::printBody();
+
+//Some useless PageContent
+echo '<div class="container-fluid">';
+echo '<div class="row">';
+echo '<div class="col-lg-4">';
+echo '<h2>Framework: <small>miniOnPHP</small></h2>';
+echo '<p class=lead">Ein Basis-System für PHP incl. MySQL, Sessions & Security<br />'
+   . 'Bootstrap included cia CDN</p>';
+echo '</div></div></div>';
+  SYSTEM\HTML::printFoot();

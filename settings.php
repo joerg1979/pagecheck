@@ -31,6 +31,17 @@
 #Setting the HTML-TITLE
     define('HTML_TITLE', "FrameworkMinionPHP");
 #Setting the local Timezone 
-date_default_timezone_set('Europe/Berlin');
+    date_default_timezone_set('Europe/Berlin');
+
+//Define Constant for use of Bootstrap 
+#HTML 4.01 Transitional   == FALSE
+// define(BOOTSTRAP_ON, FALSE);
+
+#Bootstrap                == TRUE
+    define('BOOTSTRAP_ON', TRUE);
+
+#HTML5                    == 5
+// define(BOOTSTRAP_ON, 5);
+
 ?>
     
