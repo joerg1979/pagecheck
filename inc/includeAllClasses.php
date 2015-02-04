@@ -15,17 +15,16 @@
  */
 
 #Database-Class
-require_once PROJECT_DOCUMENT_ROOT
-            ."/inc/classes/DB/class.MySQL.php";
-
-#HTML-Class
-require_once PROJECT_DOCUMENT_ROOT
-            ."/inc/classes/HTML/class.HTML.php";
-
-#Security-Class
-require_once PROJECT_DOCUMENT_ROOT
-            ."/inc/classes/Security/class.Security.php";
-
-#Sessioin-Class
-require_once PROJECT_DOCUMENT_ROOT
-            ."/inc/classes/Session/class.SessionHandler.php";
+//require_once PROJECT_DOCUMENT_ROOT
+//            ."/inc/classes/DB/class.MySQL.php";
+//
+//#HTML-Class
+require_once PROJECT_DOCUMENT_ROOT."/inc/classes/class.HTML.php";
+//
+//#Security-Class
+//require_once PROJECT_DOCUMENT_ROOT
+//            ."/inc/classes/Security/class.Security.php";
+//
+//#Sessioin-Class
+//require_once PROJECT_DOCUMENT_ROOT
+//            ."/inc/classes/Session/class.SessionHandler.php";

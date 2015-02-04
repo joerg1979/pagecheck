@@ -75,9 +75,11 @@ class HTML{
         // END of longVersion
 
         echo ($css != NULL)
-                ? '<body style="' . $css . '">' 
-                : '<body>';
-        
+                ? '<body id="home" style="' . $css . '">' 
+                : '<body id="home">';
+        if(BOOTSTRAP_ON === TRUE){
+            include_once PROJECT_DOCUMENT_ROOT.'/extLibs/htmlContent.php';
+        }
     }
     
     public static function printFoot(){

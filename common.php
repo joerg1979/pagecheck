@@ -24,11 +24,12 @@ require_once PROJECT_DOCUMENT_ROOT . '/settings.php';
 require_once PROJECT_DOCUMENT_ROOT . '/inc/includeAllClasses.php';
 
 #Creating DbObject (only if not created yet)
-if(!isset($GLOBALS['DB'])){
-    $DB = new System\Database\MySQL(DB_SERVER.DB_USER.DB_PASSWORD.DB_NAME.DB_PORT);
-}
+//if(!isset($GLOBALS['DB'])){
+//    $DB = new System\Database\MySQL(DB_SERVER.DB_USER.DB_PASSWORD.DB_NAME.DB_PORT);
+//}
 
-#Initializing a global sessionObject
-# session_set_save_handler(new System\MySessionHandler); #code from PHP5.4&SQL5.5 CD
-new System\SessionHandler();
+//#Initializing a global sessionObject
+//# session_set_save_handler(new System\MySessionHandler); #code from PHP5.4&SQL5.5 CD
+//new System\SessionHandler();
+
 ?>
