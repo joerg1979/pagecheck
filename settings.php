@@ -21,15 +21,15 @@
     define('DEBUG',TRUE);
 
 #Database Connection-Settings
-    define('DB_SERVER', "127.0.0.1");
+    define('DB_SERVER', "localhost");
     define('DB_PORT', "3306");
     define('DB_NAME', "minionphp");
 #Database Username & Password
-    define('DB_USER', "minionphp");
+    define('DB_USER', "minion");
     define('DB_PASSWORD', "0511");
 
 #Setting the HTML-TITLE
-    define('HTML_TITLE', "FrameworkMinionPHP");
+    define('HTML_TITLE', "Framework Minion(on)PHP");
 #Setting the local Timezone 
     date_default_timezone_set('Europe/Berlin');
 

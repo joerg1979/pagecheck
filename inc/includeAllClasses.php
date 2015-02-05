@@ -15,10 +15,10 @@
  */
 
 #Database-Class
-//require_once PROJECT_DOCUMENT_ROOT
-//            ."/inc/classes/DB/class.MySQL.php";
-//
-//#HTML-Class
+require_once PROJECT_DOCUMENT_ROOT
+            ."/inc/classes/DB/class.MySQL.php";
+
+#HTML-Class
 require_once PROJECT_DOCUMENT_ROOT."/inc/classes/class.HTML.php";
 //
 //#Security-Class
