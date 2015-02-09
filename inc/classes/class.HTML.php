@@ -62,7 +62,7 @@ class HTML{
         }
     }
     
-    public static function printBody($css = NULL){
+    public static function printBody($css = NULL, $withConsole = TRUE){
         echo '</head>';
         //Start longVersion if-css
         /*
@@ -70,13 +70,17 @@ class HTML{
          * if ($css != NULL){
          *  echo ' style="'.$css.'"';
          * }
-         * echo '>';
+         * echo '>'."\n";
          */ 
         // END of longVersion
 
         echo ($css != NULL)
                 ? '<body id="home" style="' . $css . '">' 
                 : '<body id="home">';
+//        if($withConsole AND DEBUG){
+//            DebugConsole::displayConsole();
+//        }
+        
         if(BOOTSTRAP_ON === TRUE){
             include_once PROJECT_DOCUMENT_ROOT.'/extLibs/htmlContent.php';
         }
@@ -90,5 +94,9 @@ class HTML{
         else{
             echo "</body></html>";
         }
+    }
+    
+    public static function printArray($array = array()){
+        return highlight_string(print_r($array, true), true);
     }
 }

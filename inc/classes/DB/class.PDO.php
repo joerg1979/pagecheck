@@ -23,7 +23,7 @@ class PDO{
     public function __construct($dsn, $user, $password){
         try{
             #New PDO-Object 
-            $this->PDO = new \PDO($dsn, $username, $passwd, $options);
+            $this->PDO = new \PDO($dsn, $user, $password);
             #Setup throwing exeptions (from PDO in global Namespace by using :: )
             $this->PDO->setAttribute(\PDO::ATTR_ERRMODE, 
                                      \PDO::ERRMODE_EXCEPTION);
@@ -58,6 +58,21 @@ class PDO{
         }
     }
     public function execute($params = array()){
-        
+            #abort on empty preparedStatement
+        if($this->preparedStatement == NULL){
+            return FALSE;
+        }
+        try {
+            #PDO-Query start
+            $this->preparedStatement->execute($params);
+            #check returned Data
+            if($this->preparedStatement->columnCount() == 0){
+                return array();
+            }
+            return $this->preparedStatement->fetchAll();
+            
+        } catch (\PDOException $e) {
+            echo '<div style="color:red;">Executing PreparedStatement FAILED: '.$e->getMessage().'</div>';
+        }
     }
 }

@@ -14,13 +14,24 @@
  * Namespace:  
  */
 
-#Database-Class
+#Database-Class MySQL
 require_once PROJECT_DOCUMENT_ROOT
             ."/inc/classes/DB/class.MySQL.php";
-
+#Database-Class PDO
+if(PDO_ON === TRUE){
+    require_once PROJECT_DOCUMENT_ROOT
+                 ."/inc/classes/DB/class.PDO.php";
+}
 #HTML-Class
-require_once PROJECT_DOCUMENT_ROOT."/inc/classes/class.HTML.php";
-//
+require_once PROJECT_DOCUMENT_ROOT
+             ."/inc/classes/class.HTML.php";
+
+#Logging-Class
+require_once PROJECT_DOCUMENT_ROOT
+             ."/inc/log/class.Logging.php";
+
+
+
 //#Security-Class
 //require_once PROJECT_DOCUMENT_ROOT
 //            ."/inc/classes/Security/class.Security.php";

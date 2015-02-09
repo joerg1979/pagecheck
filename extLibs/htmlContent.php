@@ -31,7 +31,11 @@
         </aside><!--ende LEFT NAVIGATION -->
         <!-- END of LEFT-NAVIGATION Area --> 
         <!---- Begin CONTAINER cnt02_01 (included)---->
-        <?php include_once PROJECT_DOCUMENT_ROOT.'/extLibs/cnt02_01.php';?>
+       <?php
+            include_once PROJECT_DOCUMENT_ROOT.'/extLibs/cnt02_01.php';
+            include_once PROJECT_DOCUMENT_ROOT.'/extLibs/inc.PDOPreparedStatement.php';
+            include_once PROJECT_DOCUMENT_ROOT.'/extLibs/cnt02_01_end.php';
+        ?>
         <!---- END CONTAINER cnt02_01 (included)---->
     </section><!--/.section row -->   
 </div><!-- /.container cnt02 -->

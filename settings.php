@@ -7,7 +7,7 @@
  * Project based on:        Chapter 14 "Ein Basissystem mit PHP und MySQL"
  * Project: frameworkminionphp
  * Code by GallileoComputing: commented with #-tag
- * Code by GallileoComputing: commented with //-tag
+ * Code by JS: commented with //-tag
  * 
  * File: settings.php
  * Job: Definition of Project-wide Constants
@@ -19,7 +19,7 @@
 
 #Debugging-Mode TRUE shows Console
     define('DEBUG',TRUE);
-
+ 
 #Database Connection-Settings
     define('DB_SERVER', "localhost");
     define('DB_PORT', "3306");
@@ -43,5 +43,7 @@
 #HTML5                    == 5
 // define(BOOTSTRAP_ON, 5);
 
+#Using the PDO-Class
+    define('PDO_ON', TRUE);
 ?>
     

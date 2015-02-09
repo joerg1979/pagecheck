@@ -7,7 +7,7 @@
  * Project based on:        Chapter 14 "Ein Basissystem mit PHP und MySQL"
  * Project: frameworkminionphp
  * Code by GallileoComputing: commented with #-tag
- * Code by GallileoComputing: commented with //-tag
+ * Code by JS: commented with //-tag
  * 
  * File: index.php
  * Job: Hompage of this miniFramework
@@ -30,6 +30,23 @@ SYSTEM\HTML::printBody();
 //echo '<p class=lead">Ein Basis-System für PHP incl. MySQL, Sessions & Security<br />'
 //   . 'Bootstrap included cia CDN</p>';
 //echo '</div></div></div>';
- 
-  SYSTEM\HTML::printFoot();
-  
+
+SYSTEM\HTML::printFoot();
+
+
+//##using Security-Class n methods
+//require_once 'common.php';
+//SYSTEM\Security::globalStripSlashes();
+//
+//if(isset($_GET['whatevar'])){
+//    $whatevar = htmlentities($_GET['whatevar'],ENT_QUOTES, "UTF-8");
+//}
+//
+//echo "<form action='' method='get'>";
+//echo "Name: ".htmlspecialchars($_GET['whatevar']);
+//echo "<input type='test' name='name' value='".$whatevar."'>";
+//echo "<input type='submit' name='submit' value='sumbit'>";
+//echo "</form>";
+
+
+?>
